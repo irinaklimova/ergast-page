@@ -1,0 +1,26 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: #9c27b0;
+}
+
+.main {
+    top: 100px;
+    position: relative;
+    margin: auto;
+    max-width: 800px;
+}
+
+.home-link {
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("src/assets/racing_car.png");
+}

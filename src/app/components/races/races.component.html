@@ -1,0 +1,14 @@
+<div *ngIf="data$ | async as data">
+    <br>
+    <h2 class="sub-header">Winners for {{year}}</h2>
+    <div *ngFor="let result of data[1]">
+        <mat-card>
+            <mat-card-header>
+                <mat-icon *ngIf="isChampion(result, data[0][0])" aria-hidden="false">star</mat-icon>
+                <mat-card-subtitle>{{result.raceName}}</mat-card-subtitle>
+                <mat-card-title>{{getDriverName(result)}}</mat-card-title>
+            </mat-card-header>
+        </mat-card>
+        <br>
+    </div>
+</div>

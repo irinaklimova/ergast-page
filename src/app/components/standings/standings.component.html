@@ -1,0 +1,3 @@
+<mat-nav-list *ngIf="standings$ | async as standings">
+    <a mat-list-item [routerLink]="['/standings/', standing.season]" *ngFor="let standing of standings">{{standing.season }} - {{getDriverName(standing)}}</a>
+</mat-nav-list>
